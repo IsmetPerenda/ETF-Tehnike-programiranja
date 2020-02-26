@@ -1,0 +1,18 @@
+/rhome/a/akovacevic4/workspace/TP/T7/Z2/main.cpp: In function ‘int main()’:
+/rhome/a/akovacevic4/workspace/TP/T7/Z2/main.cpp:21:10: warning: unused variable ‘recenice’ [-Wunused-variable]
+   char **recenice=new char*[n];
+          ^~~~~~~~
+/rhome/a/akovacevic4/workspace/TP/T7/Z2/main.cpp:30:3: error: ‘recenice’ was not declared in this scope
+   recenice[i]=new char[std::strlen(radni_prostor)+1];
+   ^~~~~~~~
+/rhome/a/akovacevic4/workspace/TP/T7/Z2/main.cpp:30:3: note: suggested alternative: ‘rename’
+   recenice[i]=new char[std::strlen(radni_prostor)+1];
+   ^~~~~~~~
+   rename
+/rhome/a/akovacevic4/workspace/TP/T7/Z2/main.cpp:34:12: error: ‘recenice’ was not declared in this scope
+  std::sort(recenice, recenice+n, [](const char* a, const char* b){ return std::strcmp(a,b)<0; });
+            ^~~~~~~~
+/rhome/a/akovacevic4/workspace/TP/T7/Z2/main.cpp:34:12: note: suggested alternative: ‘rename’
+  std::sort(recenice, recenice+n, [](const char* a, const char* b){ return std::strcmp(a,b)<0; });
+            ^~~~~~~~
+            rename

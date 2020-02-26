@@ -1,0 +1,103 @@
+==26807== Memcheck, a memory error detector
+==26807== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==26807== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==26807== Command: /rhome/a/akovacevic4/workspace/TP/T6/Z6/.runme
+==26807== Parent PID: 26792
+==26807== 
+==26807== Conditional jump or move depends on uninitialised value(s)
+==26807==    at 0x10AA1B: unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) (stl_algobase.h:224)
+==26807==    by 0x10A3C9: std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) (stl_deque.h:688)
+==26807==    by 0x109C4A: std::_Deque_base<int, std::allocator<int> >::_Deque_base(std::allocator<int> const&, unsigned long) (stl_deque.h:500)
+==26807==    by 0x109531: std::deque<int, std::allocator<int> >::deque(unsigned long, std::allocator<int> const&) (stl_deque.h:909)
+==26807==    by 0x10908E: main (main.cpp:58)
+==26807== 
+==26807== Conditional jump or move depends on uninitialised value(s)
+==26807==    at 0x10AADF: std::_Deque_base<int, std::allocator<int> >::_M_create_nodes(int**, int**) (stl_deque.h:726)
+==26807==    by 0x10A444: std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) (stl_deque.h:701)
+==26807==    by 0x109C4A: std::_Deque_base<int, std::allocator<int> >::_Deque_base(std::allocator<int> const&, unsigned long) (stl_deque.h:500)
+==26807==    by 0x109531: std::deque<int, std::allocator<int> >::deque(unsigned long, std::allocator<int> const&) (stl_deque.h:909)
+==26807==    by 0x10908E: main (main.cpp:58)
+==26807== 
+==26807== Use of uninitialised value of size 8
+==26807==    at 0x10AAF4: std::_Deque_base<int, std::allocator<int> >::_M_create_nodes(int**, int**) (stl_deque.h:727)
+==26807==    by 0x10A444: std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) (stl_deque.h:701)
+==26807==    by 0x109C4A: std::_Deque_base<int, std::allocator<int> >::_Deque_base(std::allocator<int> const&, unsigned long) (stl_deque.h:500)
+==26807==    by 0x109531: std::deque<int, std::allocator<int> >::deque(unsigned long, std::allocator<int> const&) (stl_deque.h:909)
+==26807==    by 0x10908E: main (main.cpp:58)
+==26807== 
+==26807== Use of uninitialised value of size 8
+==26807==    at 0x10AB5F: std::_Deque_iterator<int, int&, int*>::_M_set_node(int**) (stl_deque.h:257)
+==26807==    by 0x10A45B: std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) (stl_deque.h:710)
+==26807==    by 0x109C4A: std::_Deque_base<int, std::allocator<int> >::_Deque_base(std::allocator<int> const&, unsigned long) (stl_deque.h:500)
+==26807==    by 0x109531: std::deque<int, std::allocator<int> >::deque(unsigned long, std::allocator<int> const&) (stl_deque.h:909)
+==26807==    by 0x10908E: main (main.cpp:58)
+==26807== 
+==26807== Use of uninitialised value of size 8
+==26807==    at 0x10AB5F: std::_Deque_iterator<int, int&, int*>::_M_set_node(int**) (stl_deque.h:257)
+==26807==    by 0x10A476: std::_Deque_base<int, std::allocator<int> >::_M_initialize_map(unsigned long) (stl_deque.h:711)
+==26807==    by 0x109C4A: std::_Deque_base<int, std::allocator<int> >::_Deque_base(std::allocator<int> const&, unsigned long) (stl_deque.h:500)
+==26807==    by 0x109531: std::deque<int, std::allocator<int> >::deque(unsigned long, std::allocator<int> const&) (stl_deque.h:909)
+==26807==    by 0x10908E: main (main.cpp:58)
+==26807== 
+==26807== Conditional jump or move depends on uninitialised value(s)
+==26807==    at 0x109D0C: std::deque<int, std::allocator<int> >::_M_default_initialize() (deque.tcc:73)
+==26807==    by 0x10953D: std::deque<int, std::allocator<int> >::deque(unsigned long, std::allocator<int> const&) (stl_deque.h:910)
+==26807==    by 0x10908E: main (main.cpp:58)
+==26807== 
+==26807== Conditional jump or move depends on uninitialised value(s)
+==26807==    at 0x10B679: __gnu_cxx::__enable_if<std::__is_scalar<int>::__value, void>::__type std::__fill_a<int*, int>(int*, int*, int const&) (stl_algobase.h:695)
+==26807==    by 0x10B429: void std::fill<int*, int>(int*, int*, int const&) (stl_algobase.h:731)
+==26807==    by 0x10B031: void std::__uninitialized_default_1<true>::__uninit_default<int*>(int*, int*) (stl_uninitialized.h:512)
+==26807==    by 0x10AC67: void std::__uninitialized_default<int*>(int*, int*) (stl_uninitialized.h:567)
+==26807==    by 0x10A61A: void std::__uninitialized_default_a<int*, int>(int*, int*, std::allocator<int>&) (stl_uninitialized.h:615)
+==26807==    by 0x109D76: std::deque<int, std::allocator<int> >::_M_default_initialize() (deque.tcc:77)
+==26807==    by 0x10953D: std::deque<int, std::allocator<int> >::deque(unsigned long, std::allocator<int> const&) (stl_deque.h:910)
+==26807==    by 0x10908E: main (main.cpp:58)
+==26807== 
+==26807== Conditional jump or move depends on uninitialised value(s)
+==26807==    at 0x10ACFF: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_M_allocate(unsigned long) (stl_vector.h:172)
+==26807==    by 0x10A75C: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_M_create_storage(unsigned long) (stl_vector.h:187)
+==26807==    by 0x109F70: std::_Vector_base<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_Vector_base(unsigned long, std::allocator<std::deque<int, std::allocator<int> > > const&) (stl_vector.h:138)
+==26807==    by 0x109659: std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::vector(unsigned long, std::deque<int, std::allocator<int> > const&, std::allocator<std::deque<int, std::allocator<int> > > const&) (stl_vector.h:297)
+==26807==    by 0x1090B1: main (main.cpp:58)
+==26807== 
+==26807== Conditional jump or move depends on uninitialised value(s)
+==26807==    at 0x10B0C7: std::deque<int, std::allocator<int> >* std::__uninitialized_fill_n<false>::__uninit_fill_n<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&) (stl_uninitialized.h:209)
+==26807==    by 0x10AD79: std::deque<int, std::allocator<int> >* std::uninitialized_fill_n<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&) (stl_uninitialized.h:255)
+==26807==    by 0x10A801: std::deque<int, std::allocator<int> >* std::__uninitialized_fill_n_a<std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> >, std::deque<int, std::allocator<int> > >(std::deque<int, std::allocator<int> >*, unsigned long, std::deque<int, std::allocator<int> > const&, std::allocator<std::deque<int, std::allocator<int> > >&) (stl_uninitialized.h:366)
+==26807==    by 0x10A02F: std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::_M_fill_initialize(unsigned long, std::deque<int, std::allocator<int> > const&) (stl_vector.h:1337)
+==26807==    by 0x109670: std::vector<std::deque<int, std::allocator<int> >, std::allocator<std::deque<int, std::allocator<int> > > >::vector(unsigned long, std::deque<int, std::allocator<int> > const&, std::allocator<std::deque<int, std::allocator<int> > > const&) (stl_vector.h:298)
+==26807==    by 0x1090B1: main (main.cpp:58)
+==26807== 
+==26807== Conditional jump or move depends on uninitialised value(s)
+==26807==    at 0x10A552: std::_Deque_base<int, std::allocator<int> >::_M_destroy_nodes(int**, int**) (stl_deque.h:742)
+==26807==    by 0x109CA8: std::_Deque_base<int, std::allocator<int> >::~_Deque_base() (stl_deque.h:665)
+==26807==    by 0x1095D5: std::deque<int, std::allocator<int> >::~deque() (stl_deque.h:1045)
+==26807==    by 0x1090BD: main (main.cpp:58)
+==26807== 
+==26807== Use of uninitialised value of size 8
+==26807==    at 0x10A558: std::_Deque_base<int, std::allocator<int> >::_M_destroy_nodes(int**, int**) (stl_deque.h:743)
+==26807==    by 0x109CA8: std::_Deque_base<int, std::allocator<int> >::~_Deque_base() (stl_deque.h:665)
+==26807==    by 0x1095D5: std::deque<int, std::allocator<int> >::~deque() (stl_deque.h:1045)
+==26807==    by 0x1090BD: main (main.cpp:58)
+==26807== 
+==26807== 
+==26807== Process terminating with default action of signal 1 (SIGHUP)
+==26807==    at 0x56EF152: write (write.c:27)
+==26807==    by 0x566A1BC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1203)
+==26807==    by 0x566AB2E: new_do_write (fileops.c:457)
+==26807==    by 0x566AB2E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1277)
+==26807==    by 0x565E976: fwrite (iofwrite.c:39)
+==26807==    by 0x5151E93: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==26807==    by 0x5152206: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==26807==    by 0x1090EE: main (main.cpp:60)
+==26807== 
+==26807== HEAP SUMMARY:
+==26807==     in use at exit: 0 bytes in 0 blocks
+==26807==   total heap usage: 4 allocs, 4 frees, 74,304 bytes allocated
+==26807== 
+==26807== All heap blocks were freed -- no leaks are possible
+==26807== 
+==26807== For counts of detected and suppressed errors, rerun with: -v
+==26807== Use --track-origins=yes to see where uninitialised values come from
+==26807== ERROR SUMMARY: 13 errors from 11 contexts (suppressed: 0 from 0)

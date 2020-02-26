@@ -1,0 +1,4 @@
+/rhome/a/akovacevic4/workspace/TP/T3/Z7/main.cpp: In function ‘int main()’:
+/rhome/a/akovacevic4/workspace/TP/T3/Z7/main.cpp:101:30: error: ‘m’ was not declared in this scope
+     int sirina=NajvecaSirina(m);
+                              ^

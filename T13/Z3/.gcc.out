@@ -1,0 +1,4 @@
+/rhome/a/akovacevic4/workspace/TP/T13/Z3/main.cpp: In lambda function:
+/rhome/a/akovacevic4/workspace/TP/T13/Z3/main.cpp:122:52: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    if(student1->DajProsjek()!=student2->DajProsjek()){
+                                                    ^

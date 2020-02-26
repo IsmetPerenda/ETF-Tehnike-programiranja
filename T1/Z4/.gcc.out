@@ -1,0 +1,7 @@
+/rhome/a/akovacevic4/workspace/TP/T1/Z4/main.cpp: In function ‘int main()’:
+/rhome/a/akovacevic4/workspace/TP/T1/Z4/main.cpp:12:57: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(!(std::cin>>broj) || broj<0 || broj-floor(broj)!=0)
+                                                         ^
+/rhome/a/akovacevic4/workspace/TP/T1/Z4/main.cpp:20:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(broj==0)
+                   ^

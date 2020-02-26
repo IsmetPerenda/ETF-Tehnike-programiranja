@@ -1,0 +1,24 @@
+==28031== Memcheck, a memory error detector
+==28031== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==28031== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==28031== Command: /rhome/a/akovacevic4/workspace/TP/T5/Z4/.runme
+==28031== Parent PID: 27876
+==28031== 
+==28031== 
+==28031== Process terminating with default action of signal 1 (SIGHUP)
+==28031==    at 0x5A8D081: read (read.c:27)
+==28031==    by 0x5A0A147: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:531)
+==28031==    by 0x5A0B3F1: _IO_default_uflow (genops.c:380)
+==28031==    by 0x512B95C: __gnu_cxx::stdio_sync_filebuf<char, std::char_traits<char> >::underflow() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==28031==    by 0x5139739: std::istream::sentry::sentry(std::istream&, bool) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==28031==    by 0x513996D: std::istream::operator>>(int&) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25)
+==28031==    by 0x108F81: main (main.cpp:25)
+==28031== 
+==28031== HEAP SUMMARY:
+==28031==     in use at exit: 0 bytes in 0 blocks
+==28031==   total heap usage: 2 allocs, 2 frees, 73,728 bytes allocated
+==28031== 
+==28031== All heap blocks were freed -- no leaks are possible
+==28031== 
+==28031== For counts of detected and suppressed errors, rerun with: -v
+==28031== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

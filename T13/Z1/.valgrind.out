@@ -1,0 +1,53 @@
+==20705== Memcheck, a memory error detector
+==20705== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20705== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==20705== Command: /rhome/a/akovacevic4/workspace/TP/T13/Z1/.runme
+==20705== Parent PID: 20672
+==20705== 
+==20705== Conditional jump or move depends on uninitialised value(s)
+==20705==    at 0x10BD31: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_allocate(unsigned long) (stl_vector.h:172)
+==20705==    by 0x10B930: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_create_storage(unsigned long) (stl_vector.h:187)
+==20705==    by 0x10B328: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_Vector_base(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:138)
+==20705==    by 0x10ADAF: std::vector<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::vector(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:284)
+==20705==    by 0x109C66: main (main.cpp:89)
+==20705== 
+==20705== Conditional jump or move depends on uninitialised value(s)
+==20705==    at 0x10C779: __gnu_cxx::new_allocator<std::shared_ptr<Lik> >::allocate(unsigned long, void const*) (new_allocator.h:101)
+==20705==    by 0x10C15E: std::allocator_traits<std::allocator<std::shared_ptr<Lik> > >::allocate(std::allocator<std::shared_ptr<Lik> >&, unsigned long) (alloc_traits.h:436)
+==20705==    by 0x10BD45: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_allocate(unsigned long) (stl_vector.h:172)
+==20705==    by 0x10B930: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_create_storage(unsigned long) (stl_vector.h:187)
+==20705==    by 0x10B328: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_Vector_base(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:138)
+==20705==    by 0x10ADAF: std::vector<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::vector(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:284)
+==20705==    by 0x109C66: main (main.cpp:89)
+==20705== 
+==20705== Conditional jump or move depends on uninitialised value(s)
+==20705==    at 0x4C3012C: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20705==    by 0x10C78F: __gnu_cxx::new_allocator<std::shared_ptr<Lik> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==20705==    by 0x10C15E: std::allocator_traits<std::allocator<std::shared_ptr<Lik> > >::allocate(std::allocator<std::shared_ptr<Lik> >&, unsigned long) (alloc_traits.h:436)
+==20705==    by 0x10BD45: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_allocate(unsigned long) (stl_vector.h:172)
+==20705==    by 0x10B930: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_create_storage(unsigned long) (stl_vector.h:187)
+==20705==    by 0x10B328: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_Vector_base(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:138)
+==20705==    by 0x10ADAF: std::vector<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::vector(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:284)
+==20705==    by 0x109C66: main (main.cpp:89)
+==20705== 
+**20705** new/new[] failed and should throw an exception, but Valgrind
+**20705**    cannot throw exceptions and so is aborting instead.  Sorry.
+==20705==    at 0x4C2F81C: ??? (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20705==    by 0x4C301F5: operator new(unsigned long) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==20705==    by 0x10C78F: __gnu_cxx::new_allocator<std::shared_ptr<Lik> >::allocate(unsigned long, void const*) (new_allocator.h:111)
+==20705==    by 0x10C15E: std::allocator_traits<std::allocator<std::shared_ptr<Lik> > >::allocate(std::allocator<std::shared_ptr<Lik> >&, unsigned long) (alloc_traits.h:436)
+==20705==    by 0x10BD45: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_allocate(unsigned long) (stl_vector.h:172)
+==20705==    by 0x10B930: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_M_create_storage(unsigned long) (stl_vector.h:187)
+==20705==    by 0x10B328: std::_Vector_base<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::_Vector_base(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:138)
+==20705==    by 0x10ADAF: std::vector<std::shared_ptr<Lik>, std::allocator<std::shared_ptr<Lik> > >::vector(unsigned long, std::allocator<std::shared_ptr<Lik> > const&) (stl_vector.h:284)
+==20705==    by 0x109C66: main (main.cpp:89)
+==20705== 
+==20705== HEAP SUMMARY:
+==20705==     in use at exit: 0 bytes in 0 blocks
+==20705==   total heap usage: 2 allocs, 2 frees, 73,728 bytes allocated
+==20705== 
+==20705== All heap blocks were freed -- no leaks are possible
+==20705== 
+==20705== For counts of detected and suppressed errors, rerun with: -v
+==20705== Use --track-origins=yes to see where uninitialised values come from
+==20705== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)

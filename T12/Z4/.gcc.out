@@ -1,0 +1,35 @@
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp: In function ‘bool operator==(const Kompleksni&, const Kompleksni&)’:
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:44:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   return a.re == b.re && a.im == b.im;
+                    ^~
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:44:36: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   return a.re == b.re && a.im == b.im;
+                                    ^~
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp: In function ‘std::ostream& operator<<(std::ostream&, const Kompleksni&)’:
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:79:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(a.re==0 && a.im==0) return tok << "0";
+            ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:79:23: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(a.re==0 && a.im==0) return tok << "0";
+                       ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:80:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   else if(a.re==0){
+                 ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:81:14: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    if(a.im==-1) return tok << "-i";
+              ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:82:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    if(a.im!=1) return tok << a.im << "i";
+             ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:85:17: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   else if(a.im==0) return tok << a.re;
+                 ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:87:13: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    if(a.im==1) return tok << a.re << "+i";
+             ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:88:19: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+    else if(a.im==-1) return tok << a.re << "-i";
+                   ^
+/rhome/a/akovacevic4/workspace/TP/T12/Z4/main.cpp:92:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^

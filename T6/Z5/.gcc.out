@@ -1,0 +1,4 @@
+/rhome/a/akovacevic4/workspace/TP/T6/Z5/main.cpp: In function ‘int main()’:
+/rhome/a/akovacevic4/workspace/TP/T6/Z5/main.cpp:70:26: error: request for member ‘at’ in ‘matrica’, which is of non-class type ‘int**’
+     std::cout << matrica.at(i).at(j) << " ";
+                          ^~

@@ -1,0 +1,15 @@
+==17652== Memcheck, a memory error detector
+==17652== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==17652== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==17652== Command: /rhome/a/akovacevic4/workspace/TP/T11/Z5/.runme
+==17652== Parent PID: 17630
+==17652== 
+==17652== 
+==17652== HEAP SUMMARY:
+==17652==     in use at exit: 0 bytes in 0 blocks
+==17652==   total heap usage: 18 allocs, 18 frees, 73,808 bytes allocated
+==17652== 
+==17652== All heap blocks were freed -- no leaks are possible
+==17652== 
+==17652== For counts of detected and suppressed errors, rerun with: -v
+==17652== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
